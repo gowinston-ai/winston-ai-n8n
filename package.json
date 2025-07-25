@@ -1,19 +1,27 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
-  "keywords": [
-    "n8n-community-node-package"
-  ],
-  "license": "MIT",
-  "homepage": "",
-  "author": {
-    "name": "",
-    "email": ""
-  },
+	"name": "n8n-nodes-winston-ai",
+	"version": "1.0.0",
+	"description": "AI detector with industry leading accuracy rates in detecting use of AI in text and images. The Winston AI tools also offers a robust plagiarism checker to help maintain integrity.",
+	"keywords": [
+		"n8n-community-node-package",
+    "n8n-nodes-base",
+    "ai-detector",
+    "ai-detection",
+    "image-detection",
+    "plagiarism-detector",
+    "plagiarism-checker",
+    "text-compare",
+    "compare-text"
+	],
+	"license": "MIT",
+	"homepage": "https://gowinston.ai/",
+	"author": {
+		"name": "Winston AI",
+		"email": "support@gowinston.ai"
+	},
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/gowinston-ai/winston-ai-n8n"
   },
   "engines": {
     "node": ">=20.15"
@@ -30,17 +38,15 @@
   "files": [
     "dist"
   ],
-  "n8n": {
-    "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
-    ],
-    "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
-    ]
-  },
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/WinstonAIApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/WinstonAI/WinstonAI.node.js"
+		]
+	},
   "devDependencies": {
     "@typescript-eslint/parser": "~8.32.0",
     "eslint": "^8.57.0",
