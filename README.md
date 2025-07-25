@@ -1,5 +1,8 @@
 # n8n-nodes-winston-ai ⚡️
 
+[![CI](https://github.com/gowinston-ai/winston-ai-n8n/actions/workflows/CI.yml/badge.svg)](https://github.com/gowinston-ai/winston-ai-n8n/actions/workflows/CI.yml)
+![TypeScript](https://img.shields.io/badge/code-TypeScript-blue?logo=typescript)
+
 This is an n8n community node that lets you access all Winston AI analysis endpoints in your n8n workflows.
 
 [Winston AI](https://gowinston.ai/) provides industry-leading tools to:
