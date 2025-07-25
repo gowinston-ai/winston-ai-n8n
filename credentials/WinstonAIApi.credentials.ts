@@ -1,3 +1,4 @@
+/* eslint-disable n8n-nodes-base/cred-class-field-name-uppercase-first-char */
 import { IAuthenticateGeneric, Icon, ICredentialType, INodeProperties } from 'n8n-workflow';
 
 export class WinstonAiApi implements ICredentialType {
