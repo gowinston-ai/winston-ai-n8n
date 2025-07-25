@@ -2,8 +2,8 @@ import { IAuthenticateGeneric, Icon, ICredentialType, INodeProperties } from 'n8
 
 export class WinstonAiApi implements ICredentialType {
 	name = 'WinstonAiApi';
-	displayName = 'Winston AI';
-	icon = 'node:winstonAi.winstonai' as Icon;
+	displayName = 'Winston AI API';
+	icon = 'file:winstonai.svg' as Icon;
 	// Documentation URL updated placeholder
 	documentationUrl = 'https://docs.gowinston.ai/';
 	properties: INodeProperties[] = [
