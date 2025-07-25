@@ -11,7 +11,8 @@
     "plagiarism-detector",
     "plagiarism-checker",
     "text-compare",
-    "compare-text"
+    "compare-text",
+    "winston-ai"
 	],
 	"license": "MIT",
 	"homepage": "https://gowinston.ai/",
