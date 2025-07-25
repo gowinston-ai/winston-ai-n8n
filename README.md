@@ -1,4 +1,4 @@
-# n8n-nodes-winston-ai
+# n8n-nodes-winston-ai ⚡️
 
 This is an n8n community node that lets you access all Winston AI analysis endpoints in your n8n workflows.
 
@@ -15,18 +15,12 @@ This is an n8n community node that lets you access all Winston AI analysis endpo
 
 ---
 
-## Installation
+## Installation 💻
 
-Follow the n8n [community-nodes installation guide](https://docs.n8n.io/integrations/community-nodes/installation/), then install the package:
+Follow the n8n [community-nodes installation guide](https://docs.n8n.io/integrations/community-nodes/installation/)
 
-```bash
-# From your n8n installation folder
-npm install n8n-nodes-winston-ai
-# or using n8n’s custom extension folder
-cd ~/.n8n/custom && npm install n8n-nodes-winston-ai
-```
 
-## Operations
+## Operations 🕹️
 
 | Resource           | Operation (value)      | Description |
 |--------------------|------------------------|-------------|
@@ -35,11 +29,11 @@ cd ~/.n8n/custom && npm install n8n-nodes-winston-ai
 | Plagiarism         | Scan for plagiarism (`scan-plagiarism`) | Check text for plagiarism by searching the web for matching content. Optional language / country filtering and source exclusion supported. |
 | Text Compare       | Compare texts (`compare-texts`) | Compare two texts and return a similarity score and detailed match information. |
 
-## Credentials
+## Credentials 🔐
 
 The node requires a Winston AI API key.
 
-1. Sign in to the Winston AI dashboard and generate an API key.
+1. Sign in to the [Winston AI dashboard](https://dev.gowinston.ai/) and generate an API key.
 2. In n8n, create new **Winston AI API** credentials:
    * Field **API Key** → paste your key.
 3. Use these credentials in any Winston AI node. The key will be sent in the `Authorization` header as `Bearer <token>`.
@@ -49,7 +43,7 @@ The node requires a Winston AI API key.
 * Minimum n8n version: **1.0.0** (tested on 1.24)
 * Requires Node.js **≥ 20.15**
 
-## Usage
+## Usage 📊
 
 1. Add the **Winston AI** node to your workflow.
 2. Choose a *Resource* and *Operation*.
