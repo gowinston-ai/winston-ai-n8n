@@ -1,10 +1,8 @@
 {
-	"node": "n8n-nodes-base.WinstonAI",
+	"node": "n8n-nodes-base.WinstonAi",
 	"nodeVersion": "1.0.0",
 	"codexVersion": "1.0.0",
-	"categories": [
-		"Miscellaneous"
-	],
+	"categories": ["Miscellaneous"],
 	"resources": {
 		"credentialDocumentation": [
 			{

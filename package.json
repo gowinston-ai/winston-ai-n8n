@@ -42,10 +42,10 @@
 	"n8n": {
 		"n8nNodesApiVersion": 1,
 		"credentials": [
-			"dist/credentials/WinstonAIApi.credentials.js"
+			"dist/credentials/WinstonAiApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/WinstonAI/WinstonAI.node.js"
+			"dist/nodes/WinstonAi/WinstonAi.node.js"
 		]
 	},
   "devDependencies": {

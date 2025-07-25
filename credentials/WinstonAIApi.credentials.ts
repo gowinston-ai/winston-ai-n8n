@@ -1,12 +1,9 @@
-import {
-	IAuthenticateGeneric,
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+import { IAuthenticateGeneric, Icon, ICredentialType, INodeProperties } from 'n8n-workflow';
 
-export class WinstonAIApi implements ICredentialType {
-	name = 'WinstonAIApi';
-	displayName = 'Winston AI API';
+export class WinstonAiApi implements ICredentialType {
+	name = 'WinstonAiApi';
+	displayName = 'Winston AI';
+	icon = 'node:winstonAi.winstonai' as Icon;
 	// Documentation URL updated placeholder
 	documentationUrl = 'https://docs.gowinston.ai/';
 	properties: INodeProperties[] = [
@@ -14,15 +11,16 @@ export class WinstonAIApi implements ICredentialType {
 			displayName: 'API Key',
 			name: 'apiKey',
 			type: 'string',
+			typeOptions: { password: true },
 			default: '',
 		},
 	];
-	authenticate = {
+	authenticate: IAuthenticateGeneric = {
 		type: 'generic',
 		properties: {
 			headers: {
-				'Authorization': '={{"Bearer " + $credentials.apiKey}}',
+				Authorization: '={{"Bearer " + $credentials.apiKey}}',
 			},
 		},
-	} as IAuthenticateGeneric;
-} 
+	};
+}
