@@ -1,5 +1,5 @@
 /* eslint-disable n8n-nodes-base/cred-class-field-name-uppercase-first-char */
-import { IAuthenticateGeneric, Icon, ICredentialType, INodeProperties } from 'n8n-workflow';
+import { IAuthenticateGeneric, Icon, ICredentialTestRequest, ICredentialType, INodeProperties } from 'n8n-workflow';
 
 export class WinstonAiApi implements ICredentialType {
 	name = 'WinstonAiApi';
@@ -15,6 +15,12 @@ export class WinstonAiApi implements ICredentialType {
 			typeOptions: { password: true },
 			default: '',
 		},
+		{
+			displayName: 'Domain',
+			name: 'domain',
+			type: 'string',
+			default: 'https://api.gowinston.ai',
+		},
 	];
 	authenticate: IAuthenticateGeneric = {
 		type: 'generic',
@@ -24,4 +30,17 @@ export class WinstonAiApi implements ICredentialType {
 			},
 		},
 	};
+
+	test: ICredentialTestRequest = {
+		request: {
+			baseURL: '={{$credentials.domain}}',
+			url: '/credits',
+			headers: {
+				Authorization: '={{"Bearer " + $credentials.apiKey}}',
+			},
+			method: 'GET',
+		}
+	}
+
+
 }
