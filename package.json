@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-winston-ai",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "AI detector with industry leading accuracy rates in detecting use of AI in text and images. The Winston AI tools also offers a robust plagiarism checker to help maintain integrity.",
 	"keywords": [
 		"n8n-community-node-package",
