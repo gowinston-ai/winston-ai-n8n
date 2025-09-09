@@ -35,12 +35,9 @@ export class WinstonAiApi implements ICredentialType {
 		request: {
 			baseURL: '={{$credentials.domain}}',
 			url: '/credits',
-			headers: {
-				Authorization: '={{"Bearer " + $credentials.apiKey}}',
-			},
 			method: 'GET',
-		}
-	}
+		},
+	};
 
 
 }
