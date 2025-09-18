@@ -1,44 +1,44 @@
 {
 	"name": "n8n-nodes-winston-ai",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "AI detector with industry leading accuracy rates in detecting use of AI in text and images. The Winston AI tools also offers a robust plagiarism checker to help maintain integrity.",
 	"keywords": [
 		"n8n-community-node-package",
-    "n8n-nodes-base",
-    "ai-detector",
-    "ai-detection",
-    "image-detection",
-    "plagiarism-detector",
-    "plagiarism-checker",
-    "text-compare",
-    "compare-text",
-    "winston-ai"
+		"n8n-nodes-base",
+		"ai-detector",
+		"ai-detection",
+		"image-detection",
+		"plagiarism-detector",
+		"plagiarism-checker",
+		"text-compare",
+		"compare-text",
+		"winston-ai"
 	],
 	"license": "MIT",
-  "homepage": "https://github.com/gowinston-ai/winston-ai-n8n",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gowinston-ai/winston-ai-n8n.git"
-  },
+	"homepage": "https://github.com/gowinston-ai/winston-ai-n8n",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gowinston-ai/winston-ai-n8n.git"
+	},
 	"author": {
 		"name": "winston-ai",
 		"email": "support@gowinston.ai"
 	},
-  "engines": {
-    "node": ">=20.15"
-  },
-  "main": "index.js",
-  "scripts": {
-    "build": "npx rimraf dist && tsc && gulp build:icons",
-    "dev": "tsc --watch",
-    "format": "prettier nodes credentials --write",
-    "lint": "eslint nodes credentials package.json",
-    "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
-  },
-  "files": [
-    "dist"
-  ],
+	"engines": {
+		"node": ">=20.15"
+	},
+	"main": "index.js",
+	"scripts": {
+		"build": "npx rimraf dist && tsc && gulp build:icons",
+		"dev": "tsc --watch",
+		"format": "prettier nodes credentials --write",
+		"lint": "eslint nodes credentials package.json",
+		"lintfix": "eslint nodes credentials package.json --fix",
+		"prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+	},
+	"files": [
+		"dist"
+	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
 		"credentials": [
@@ -48,15 +48,15 @@
 			"dist/nodes/WinstonAi/WinstonAi.node.js"
 		]
 	},
-  "devDependencies": {
-    "@typescript-eslint/parser": "~8.44.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-n8n-nodes-base": "^1.16.3",
-    "gulp": "^5.0.0",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
-  },
-  "peerDependencies": {
-    "n8n-workflow": "*"
-  }
+	"devDependencies": {
+		"@typescript-eslint/parser": "~8.44.0",
+		"eslint": "^9.35.0",
+		"eslint-plugin-n8n-nodes-base": "^1.16.3",
+		"gulp": "^5.0.0",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
 }
