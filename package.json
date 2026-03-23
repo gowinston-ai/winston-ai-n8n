@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-winston-ai",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "AI detector with industry leading accuracy rates in detecting use of AI in text and images. The Winston AI tools also offers a robust plagiarism checker to help maintain integrity.",
 	"keywords": [
 		"n8n-community-node-package",
@@ -49,11 +49,11 @@
 		]
 	},
 	"devDependencies": {
-		"@typescript-eslint/parser": "~8.44.0",
-		"eslint": "^9.35.0",
-		"eslint-plugin-n8n-nodes-base": "^1.16.3",
-		"gulp": "^5.0.0",
-		"prettier": "^3.5.3",
+		"@typescript-eslint/parser": "^8.57.1",
+		"eslint": "^10.1.0",
+		"eslint-plugin-n8n-nodes-base": "^1.16.6",
+		"gulp": "^5.0.1",
+		"prettier": "^3.8.1",
 		"typescript": "^5.9.2"
 	},
 	"peerDependencies": {
